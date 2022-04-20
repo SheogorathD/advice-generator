@@ -16,8 +16,8 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Grayish Blue: hsl(217, 19%, 38%) --- card background
-- Dark Grayish Blue: hsl(217, 19%, 24%) --- or this? ^
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%) --- card background
 - Dark Blue: hsl(218, 23%, 16%) --- page background
 
 ## Typography

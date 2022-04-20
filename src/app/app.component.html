@@ -1,1 +1,29 @@
-<div class="container"></div>
+<div class="container">
+  <div class="card">
+    <div class="card-inner">
+      <ng-container *ngIf="advice$ | async as advice">
+        <div class="advice-header">Advice #{{ advice.slip.id }}</div>
+        <div class="advice">“{{ advice.slip.advice }}”</div>
+      </ng-container>
+      <div class="divider">
+        <img
+          src="../assets/images/pattern-divider-desktop.svg"
+          alt="divider"
+          class="desktop-divider"
+        />
+        <img
+          src="../assets/images/pattern-divider-mobile.svg"
+          alt="divider"
+          class="mobile-divider"
+        />
+      </div>
+    </div>
+    <button class="show-new-button" (click)="loadNewAdvice()">
+      <img
+        [@roll]="state"
+        src="../assets/images/icon-dice.svg"
+        alt="dice-icon"
+      />
+    </button>
+  </div>
+</div>

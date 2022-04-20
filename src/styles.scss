@@ -1,1 +1,13 @@
 @import "app/app.component.scss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  margin: 0;
+}

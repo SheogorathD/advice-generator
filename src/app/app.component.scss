@@ -1,3 +1,95 @@
 body {
   background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  font-size: 28px;
+}
+
+.card {
+  position: relative;
+  max-width: 500px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+
+  .card-inner {
+    min-height: 165px;
+    padding: 30px;
+
+    .advice-header {
+      color: hsl(150, 100%, 66%);
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .divider {
+      bottom: 0;
+      margin: 30px 0;
+
+      .desktop-divider {
+        display: block;
+        width: 100%;
+      }
+
+      .mobile-divider {
+        display: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.show-new-button {
+  position: absolute;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 40px;
+  }
+
+  .container {
+    max-width: 375px;
+  }
+
+  .desktop-divider {
+    display: none;
+  }
+
+  .mobile-divider {
+    display: block;
+  }
+
+  .card .card-inner .advice-header {
+    font-size: 26px;
+  }
+
+  .show-new-button {
+    height: 100px;
+    width: 100px;
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
 }
